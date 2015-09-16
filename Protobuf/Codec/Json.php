@@ -1,8 +1,8 @@
 <?php
 
-namespace StudyDrSlump\Protobuf\Codec;
+namespace ObibaDrSlump\Protobuf\Codec;
 
-use StudyDrSlump\Protobuf;
+use ObibaDrSlump\Protobuf;
 
 /**
  * This codec serializes and unserializes from/to Json strings
@@ -15,7 +15,7 @@ class Json extends PhpArray
     implements Protobuf\CodecInterface
 {
     /**
-     * @param \StudyDrSlump\Protobuf\Message $message
+     * @param \ObibaDrSlump\Protobuf\Message $message
      * @return string
      */
     public function encode(Protobuf\Message $message)
@@ -25,9 +25,9 @@ class Json extends PhpArray
     }
 
     /**
-     * @param \StudyDrSlump\Protobuf\Message $message
+     * @param \ObibaDrSlump\Protobuf\Message $message
      * @param string $data
-     * @return \StudyDrSlump\Protobuf\Message
+     * @return \ObibaDrSlump\Protobuf\Message
      */
     public function decode(Protobuf\Message $message, $data)
     {

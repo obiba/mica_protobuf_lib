@@ -1,6 +1,6 @@
 <?php
 
-namespace StudyDrSlump\Protobuf\Codec\Binary;
+namespace ObibaDrSlump\Protobuf\Codec\Binary;
 
 /**
  * Implements writing primitives for Protobuf binary streams

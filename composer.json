@@ -1,0 +1,25 @@
+{
+  "name": "obiba/obiba-protobuf",
+  "description": "PHP implementation of Google's Protocol Buffers",
+  "keywords": ["protobuf", "protocol buffer", "serializing"],
+  "homepage": "https://github.com/obiba/obiba-protobuf",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Iván -DrSlump- Montes",
+      "email": "drslump@pollinimini.net",
+      "homepage": "https://github.com/drslump/Protobuf-PHP"
+    },
+    {
+      "name": "Obiba",
+      "email": "info@obiba.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "psr-0": {"ObibaDrSlump": ""}
+  }
+}

@@ -1,8 +1,8 @@
 <?php
 
-namespace StudyDrSlump\Protobuf\Codec;
+namespace ObibaDrSlump\Protobuf\Codec;
 
-use StudyDrSlump\Protobuf;
+use ObibaDrSlump\Protobuf;
 
 /**
  * This codec serializes and unserializes from/to Xml documents
@@ -50,7 +50,7 @@ class Xml extends PhpArray
     }
 
     /**
-     * @param \StudyDrSlump\Protobuf\Message $message
+     * @param \ObibaDrSlump\Protobuf\Message $message
      * @return string | \SimpleXMLElement
      */
     public function encode(Protobuf\Message $message)
@@ -90,9 +90,9 @@ class Xml extends PhpArray
     }
 
     /**
-     * @param \StudyDrSlump\Protobuf\Message $message
+     * @param \ObibaDrSlump\Protobuf\Message $message
      * @param string | \SimpleXMLElement $xml
-     * @return \StudyDrSlump\Protobuf\Message
+     * @return \ObibaDrSlump\Protobuf\Message
      */
     public function decode(Protobuf\Message $message, $xml)
     {

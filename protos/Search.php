@@ -5,14 +5,14 @@
 
 namespace Search {
 
-  class TermOperator extends \StudyDrSlump\Protobuf\Enum {
+  class TermOperator extends \ObibaDrSlump\Protobuf\Enum {
     const AND_OP = 0;
     const OR_OP = 1;
   }
 }
 namespace Search {
 
-  class QueryTermsDto extends \StudyDrSlump\Protobuf\Message {
+  class QueryTermsDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \Search\QueryTermDto[] */
     public $queries = array();
@@ -22,14 +22,14 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.QueryTermsDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.QueryTermsDto');
 
       // REPEATED MESSAGE queries = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "queries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\Search\QueryTermDto';
       $descriptor->addField($f);
 
@@ -101,7 +101,7 @@ namespace Search {
 
 namespace Search {
 
-  class QueryTermDto extends \StudyDrSlump\Protobuf\Message {
+  class QueryTermDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var boolean */
     public $global = NULL;
@@ -114,22 +114,22 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.QueryTermDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.QueryTermDto');
 
       // OPTIONAL BOOL global = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "global";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING facet = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "facet";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -217,7 +217,7 @@ namespace Search {
 
 namespace Search {
 
-  class VariableTermDto extends \StudyDrSlump\Protobuf\Message {
+  class VariableTermDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $variable = NULL;
@@ -227,14 +227,14 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.VariableTermDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.VariableTermDto');
 
       // REQUIRED STRING variable = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "variable";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -285,7 +285,7 @@ namespace Search {
 
 namespace Search {
 
-  class FilterDto extends \StudyDrSlump\Protobuf\Message {
+  class FilterDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $variable = NULL;
@@ -298,22 +298,22 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FilterDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FilterDto');
 
       // REQUIRED STRING variable = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "variable";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL not = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "not";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -401,7 +401,7 @@ namespace Search {
 
 namespace Search {
 
-  class LogicalTermDto extends \StudyDrSlump\Protobuf\Message {
+  class LogicalTermDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int - \Search\TermOperator */
     public $operator = \Search\TermOperator::AND_OP;
@@ -411,14 +411,14 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.LogicalTermDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.LogicalTermDto');
 
       // REQUIRED ENUM operator = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "operator";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_ENUM;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_ENUM;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->reference = '\Search\TermOperator';
       $f->default = \Search\TermOperator::AND_OP;
       $descriptor->addField($f);
@@ -471,7 +471,7 @@ namespace Search {
 
 namespace Search {
 
-  class InTermDto extends \StudyDrSlump\Protobuf\Message {
+  class InTermDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string[] */
     public $values = array();
@@ -484,22 +484,22 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.InTermDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.InTermDto');
 
       // REPEATED STRING values = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "values";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 minimumMatch = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "minimumMatch";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = 1;
       $descriptor->addField($f);
 
@@ -608,7 +608,7 @@ namespace Search {
 
 namespace Search {
 
-  class RangeTermDto extends \StudyDrSlump\Protobuf\Message {
+  class RangeTermDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $from = NULL;
@@ -627,39 +627,39 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.RangeTermDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.RangeTermDto');
 
       // OPTIONAL STRING from = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "from";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING to = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "to";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL includeLower = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "includeLower";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = TRUE;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL includeUpper = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "includeUpper";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
@@ -822,7 +822,7 @@ namespace Search {
 
 namespace Search {
 
-  class QueryResultDto extends \StudyDrSlump\Protobuf\Message {
+  class QueryResultDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \Search\FacetResultDto[] */
     public $facets = array();
@@ -838,31 +838,31 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.QueryResultDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.QueryResultDto');
 
       // REPEATED MESSAGE facets = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "facets";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\Search\FacetResultDto';
       $descriptor->addField($f);
 
       // REQUIRED INT32 totalHits = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "totalHits";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE hits = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "hits";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\Search\ItemResultDto';
       $descriptor->addField($f);
 
@@ -1028,7 +1028,7 @@ namespace Search {
 
 namespace Search\FacetResultDto {
 
-  class FilterResultDto extends \StudyDrSlump\Protobuf\Message {
+  class FilterResultDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $count = NULL;
@@ -1038,14 +1038,14 @@ namespace Search\FacetResultDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto.FilterResultDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto.FilterResultDto');
 
       // REQUIRED INT32 count = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "count";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -1096,7 +1096,7 @@ namespace Search\FacetResultDto {
 
 namespace Search\FacetResultDto {
 
-  class TermFrequencyResultDto extends \StudyDrSlump\Protobuf\Message {
+  class TermFrequencyResultDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $term = NULL;
@@ -1109,22 +1109,22 @@ namespace Search\FacetResultDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto.TermFrequencyResultDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto.TermFrequencyResultDto');
 
       // REQUIRED STRING term = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "term";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 count = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "count";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -1212,7 +1212,7 @@ namespace Search\FacetResultDto {
 
 namespace Search\FacetResultDto {
 
-  class StatisticalResultDto extends \StudyDrSlump\Protobuf\Message {
+  class StatisticalResultDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $count = 0;
@@ -1243,71 +1243,71 @@ namespace Search\FacetResultDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto.StatisticalResultDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto.StatisticalResultDto');
 
       // REQUIRED INT64 count = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "count";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT64;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT64;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->default = 0;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT total = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "total";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_FLOAT;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT min = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "min";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_FLOAT;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT max = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "max";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_FLOAT;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT mean = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "mean";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_FLOAT;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT sumOfSquares = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "sumOfSquares";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_FLOAT;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT variance = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "variance";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_FLOAT;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL FLOAT stdDeviation = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "stdDeviation";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_FLOAT;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_FLOAT;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -1617,7 +1617,7 @@ namespace Search\FacetResultDto {
 
 namespace Search {
 
-  class FacetResultDto extends \StudyDrSlump\Protobuf\Message {
+  class FacetResultDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $facet = NULL;
@@ -1636,40 +1636,40 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.FacetResultDto');
 
       // REQUIRED STRING facet = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "facet";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE frequencies = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "frequencies";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\Search\FacetResultDto\TermFrequencyResultDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE statistics = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "statistics";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\Search\FacetResultDto\StatisticalResultDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE filters = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "filters";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\Search\FacetResultDto\FilterResultDto';
       $descriptor->addField($f);
 
@@ -1872,7 +1872,7 @@ namespace Search {
 
 namespace Search {
 
-  class ItemResultDto extends \StudyDrSlump\Protobuf\Message {
+  class ItemResultDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $identifier = NULL;
@@ -1882,14 +1882,14 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.ItemResultDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.ItemResultDto');
 
       // REQUIRED STRING identifier = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "identifier";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -1940,7 +1940,7 @@ namespace Search {
 
 namespace Search {
 
-  class ItemFieldsDto extends \StudyDrSlump\Protobuf\Message {
+  class ItemFieldsDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \Opal\EntryDto[] */
     public $fields = array();
@@ -1950,14 +1950,14 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.ItemFieldsDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.ItemFieldsDto');
 
       // REPEATED MESSAGE fields = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "fields";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\Opal\EntryDto';
       $descriptor->addField($f);
 
@@ -2029,7 +2029,7 @@ namespace Search {
 
 namespace Search {
 
-  class VariableItemDto extends \StudyDrSlump\Protobuf\Message {
+  class VariableItemDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \Magma\VariableDto */
     public $variable = NULL;
@@ -2039,14 +2039,14 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.VariableItemDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.VariableItemDto');
 
       // REQUIRED MESSAGE variable = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "variable";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->reference = '\Magma\VariableDto';
       $descriptor->addField($f);
 
@@ -2098,7 +2098,7 @@ namespace Search {
 
 namespace Search {
 
-  class ValueSetsResultDto extends \StudyDrSlump\Protobuf\Message {
+  class ValueSetsResultDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $totalHits = NULL;
@@ -2111,22 +2111,22 @@ namespace Search {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.ValueSetsResultDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'Search.ValueSetsResultDto');
 
       // REQUIRED INT32 totalHits = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "totalHits";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE valueSets = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "valueSets";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\Magma\ValueSetsDto';
       $descriptor->addField($f);
 
@@ -2216,81 +2216,81 @@ namespace Search {
 namespace {
   \Search\QueryTermDto::extension(function () {
     // OPTIONAL MESSAGE Search.VariableTermDto.field = 1001
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1001;
     $f->name = "Search.VariableTermDto.field";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\Search\VariableTermDto';
     return $f;
   });
   \Search\QueryTermDto::extension(function () {
     // OPTIONAL MESSAGE Search.LogicalTermDto.filter = 3000
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 3000;
     $f->name = "Search.LogicalTermDto.filter";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\Search\LogicalTermDto';
     return $f;
   });
   \Search\QueryTermDto::extension(function () {
     // OPTIONAL MESSAGE Search.LogicalTermDto.facetFilter = 3001
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 3001;
     $f->name = "Search.LogicalTermDto.facetFilter";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\Search\LogicalTermDto';
     return $f;
   });
   \Search\LogicalTermDto::extension(function () {
     // REPEATED MESSAGE Search.FilterDto.filters = 1001
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1001;
     $f->name = "Search.FilterDto.filters";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
     $f->reference = '\Search\FilterDto';
     return $f;
   });
   \Search\FilterDto::extension(function () {
     // OPTIONAL MESSAGE Search.InTermDto.terms = 1000
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1000;
     $f->name = "Search.InTermDto.terms";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\Search\InTermDto';
     return $f;
   });
   \Search\FilterDto::extension(function () {
     // OPTIONAL MESSAGE Search.RangeTermDto.range = 1001
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1001;
     $f->name = "Search.RangeTermDto.range";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\Search\RangeTermDto';
     return $f;
   });
   \Search\ItemResultDto::extension(function () {
     // OPTIONAL MESSAGE Search.ItemFieldsDto.item = 1000
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1000;
     $f->name = "Search.ItemFieldsDto.item";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\Search\ItemFieldsDto';
     return $f;
   });
   \Search\ItemResultDto::extension(function () {
     // OPTIONAL MESSAGE Search.VariableItemDto.item = 1001
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1001;
     $f->name = "Search.VariableItemDto.item";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\Search\VariableItemDto';
     return $f;
   });

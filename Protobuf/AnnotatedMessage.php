@@ -1,8 +1,8 @@
 <?php
 
-namespace StudyDrSlump\Protobuf;
+namespace ObibaDrSlump\Protobuf;
 
-use StudyDrSlump\Protobuf;
+use ObibaDrSlump\Protobuf;
 
 abstract class AnnotatedMessage extends Message
 {

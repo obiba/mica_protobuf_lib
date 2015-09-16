@@ -1,8 +1,8 @@
 <?php
 
-namespace StudyDrSlump\Protobuf\Compiler;
+namespace ObibaDrSlump\Protobuf\Compiler;
 
-use StudyDrSlump\Protobuf;
+use ObibaDrSlump\Protobuf;
 use google\protobuf as proto;
 
 class PhpGenerator extends AbstractGenerator
@@ -177,7 +177,7 @@ class PhpGenerator extends AbstractGenerator
         $s[]= "   */";
         endif;
 
-        $s[]= "  class " . $enum->getName() . ' extends \StudyDrSlump\Protobuf\Enum {';
+        $s[]= "  class " . $enum->getName() . ' extends \ObibaDrSlump\Protobuf\Enum {';
         foreach ($enum->getValueList() as $value):
         $s[]= "    const " . $value->getName() . " = " . $value->getNumber() . ";";
         endforeach;
@@ -210,7 +210,7 @@ class PhpGenerator extends AbstractGenerator
         // Compute a new namespace with the message name as suffix
         $ns .= '.' . $msg->getName();
 
-        $s[]= '  class ' . $msg->getName() . ' extends \StudyDrSlump\Protobuf\Message {';
+        $s[]= '  class ' . $msg->getName() . ' extends \ObibaDrSlump\Protobuf\Message {';
         $s[]= '';
 
         foreach ($msg->getField() as $field):
@@ -223,7 +223,7 @@ class PhpGenerator extends AbstractGenerator
         $s[]= '';
         $s[]= '    public static function descriptor()';
         $s[]= '    {';
-        $s[]= '      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, \'' . $ns . '\');';
+        $s[]= '      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, \'' . $ns . '\');';
         $s[]= '';
         foreach ($msg->getField() as $field):
         $s[]=        $this->compileField($field, $ns, "      ");
@@ -290,7 +290,7 @@ class PhpGenerator extends AbstractGenerator
     protected function compileField(proto\FieldDescriptorProto $field, $ns, $indent)
     {
         // Fetch constants by reflecton
-        $refl = new \ReflectionClass('\StudyDrSlump\Protobuf');
+        $refl = new \ReflectionClass('\ObibaDrSlump\Protobuf');
         $constants = $refl->getConstants();
 
         // Separate rules and types
@@ -311,11 +311,11 @@ class PhpGenerator extends AbstractGenerator
         $type = array_search($field->getType(), $types);
 
         $s[]= "// $rule $type " . $field->getName() . " = " . $field->getNumber();
-        $s[]= '$f = new \StudyDrSlump\Protobuf\Field();';
+        $s[]= '$f = new \ObibaDrSlump\Protobuf\Field();';
         $s[]= '$f->number    = ' . $field->getNumber() . ';';
         $s[]= '$f->name      = "'. $field->getName() . '";';
-        $s[]= '$f->type      = \StudyDrSlump\Protobuf::TYPE_' . $type . ';';
-        $s[]= '$f->rule      = \StudyDrSlump\Protobuf::RULE_' . $rule . ';';
+        $s[]= '$f->type      = \ObibaDrSlump\Protobuf::TYPE_' . $type . ';';
+        $s[]= '$f->rule      = \ObibaDrSlump\Protobuf::RULE_' . $rule . ';';
 
         if ($field->hasTypeName()):
         $ref = $field->getTypeName();

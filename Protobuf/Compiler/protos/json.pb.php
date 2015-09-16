@@ -7,7 +7,7 @@ namespace {
 
   \google\protobuf\FileOptions::extension(function(){
       // optional  php.namespace = 50002
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number    = 50102;
     $f->name      = "json.namespace";
     $f->type      = 9;
@@ -16,7 +16,7 @@ namespace {
   });
   \google\protobuf\FileOptions::extension(function(){
       // optional  php.suffix = 50003
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number    = 50103;
     $f->name      = "json.suffix";
     $f->type      = 9;

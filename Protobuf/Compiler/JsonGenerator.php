@@ -1,8 +1,8 @@
 <?php
 
-namespace StudyDrSlump\Protobuf\Compiler;
+namespace ObibaDrSlump\Protobuf\Compiler;
 
-use StudyDrSlump\Protobuf;
+use ObibaDrSlump\Protobuf;
 use google\protobuf as proto;
 
 class JsonGenerator extends AbstractGenerator

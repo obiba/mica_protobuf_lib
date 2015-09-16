@@ -5,7 +5,7 @@
 
 namespace google\protobuf {
 
-  class FileDescriptorSet extends \StudyDrSlump\Protobuf\Message {
+  class FileDescriptorSet extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \google\protobuf\FileDescriptorProto[] */
     public $file = array();
@@ -15,14 +15,14 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorSet');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorSet');
 
       // REPEATED MESSAGE file = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "file";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FileDescriptorProto';
       $descriptor->addField($f);
 
@@ -94,7 +94,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class FileDescriptorProto extends \StudyDrSlump\Protobuf\Message {
+  class FileDescriptorProto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -128,83 +128,83 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorProto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING package = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "package";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED STRING dependency = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "dependency";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE message_type = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "message_type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\DescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE enum_type = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "enum_type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\EnumDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE service = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "service";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\ServiceDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE extension = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "extension";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FieldDescriptorProto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "options";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FileOptions';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE source_code_info = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "source_code_info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\SourceCodeInfo';
       $descriptor->addField($f);
 
@@ -652,7 +652,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\DescriptorProto {
 
-  class ExtensionRange extends \StudyDrSlump\Protobuf\Message {
+  class ExtensionRange extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $start = NULL;
@@ -665,22 +665,22 @@ namespace google\protobuf\DescriptorProto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto.ExtensionRange');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto.ExtensionRange');
 
       // OPTIONAL INT32 start = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "start";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 end = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "end";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -768,7 +768,7 @@ namespace google\protobuf\DescriptorProto {
 
 namespace google\protobuf {
 
-  class DescriptorProto extends \StudyDrSlump\Protobuf\Message {
+  class DescriptorProto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -796,67 +796,67 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.DescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE field = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "field";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FieldDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE extension = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "extension";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\FieldDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE nested_type = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "nested_type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\DescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE enum_type = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "enum_type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\EnumDescriptorProto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE extension_range = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "extension_range";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\DescriptorProto\ExtensionRange';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "options";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\MessageOptions';
       $descriptor->addField($f);
 
@@ -1230,7 +1230,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\FieldDescriptorProto {
 
-  class Type extends \StudyDrSlump\Protobuf\Enum {
+  class Type extends \ObibaDrSlump\Protobuf\Enum {
     const TYPE_DOUBLE = 1;
     const TYPE_FLOAT = 2;
     const TYPE_INT64 = 3;
@@ -1253,7 +1253,7 @@ namespace google\protobuf\FieldDescriptorProto {
 }
 namespace google\protobuf\FieldDescriptorProto {
 
-  class Label extends \StudyDrSlump\Protobuf\Enum {
+  class Label extends \ObibaDrSlump\Protobuf\Enum {
     const LABEL_OPTIONAL = 1;
     const LABEL_REQUIRED = 2;
     const LABEL_REPEATED = 3;
@@ -1261,7 +1261,7 @@ namespace google\protobuf\FieldDescriptorProto {
 }
 namespace google\protobuf {
 
-  class FieldDescriptorProto extends \StudyDrSlump\Protobuf\Message {
+  class FieldDescriptorProto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -1292,72 +1292,72 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldDescriptorProto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 number = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "number";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL ENUM label = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "label";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_ENUM;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_ENUM;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldDescriptorProto\Label';
       $descriptor->addField($f);
 
       // OPTIONAL ENUM type = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_ENUM;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_ENUM;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldDescriptorProto\Type';
       $descriptor->addField($f);
 
       // OPTIONAL STRING type_name = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "type_name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING extendee = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "extendee";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING default_value = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "default_value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "options";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldOptions';
       $descriptor->addField($f);
 
@@ -1668,7 +1668,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumDescriptorProto extends \StudyDrSlump\Protobuf\Message {
+  class EnumDescriptorProto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -1684,31 +1684,31 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumDescriptorProto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE value = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\EnumValueDescriptorProto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "options";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\EnumOptions';
       $descriptor->addField($f);
 
@@ -1854,7 +1854,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumValueDescriptorProto extends \StudyDrSlump\Protobuf\Message {
+  class EnumValueDescriptorProto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -1870,30 +1870,30 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueDescriptorProto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 number = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "number";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "options";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\EnumValueOptions';
       $descriptor->addField($f);
 
@@ -2019,7 +2019,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class ServiceDescriptorProto extends \StudyDrSlump\Protobuf\Message {
+  class ServiceDescriptorProto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -2035,31 +2035,31 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceDescriptorProto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE method = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "method";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\MethodDescriptorProto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "options";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\ServiceOptions';
       $descriptor->addField($f);
 
@@ -2205,7 +2205,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class MethodDescriptorProto extends \StudyDrSlump\Protobuf\Message {
+  class MethodDescriptorProto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -2224,38 +2224,38 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodDescriptorProto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodDescriptorProto');
 
       // OPTIONAL STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING input_type = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "input_type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING output_type = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "output_type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE options = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "options";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\MethodOptions';
       $descriptor->addField($f);
 
@@ -2418,7 +2418,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\FileOptions {
 
-  class OptimizeMode extends \StudyDrSlump\Protobuf\Enum {
+  class OptimizeMode extends \ObibaDrSlump\Protobuf\Enum {
     const SPEED = 1;
     const CODE_SIZE = 2;
     const LITE_RUNTIME = 3;
@@ -2426,7 +2426,7 @@ namespace google\protobuf\FileOptions {
 }
 namespace google\protobuf {
 
-  class FileOptions extends \StudyDrSlump\Protobuf\Message {
+  class FileOptions extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $java_package = NULL;
@@ -2460,85 +2460,85 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileOptions');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FileOptions');
 
       // OPTIONAL STRING java_package = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "java_package";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING java_outer_classname = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "java_outer_classname";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL java_multiple_files = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "java_multiple_files";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL java_generate_equals_and_hash = 20
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 20;
       $f->name = "java_generate_equals_and_hash";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // OPTIONAL ENUM optimize_for = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "optimize_for";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_ENUM;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_ENUM;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FileOptions\OptimizeMode';
       $f->default = \google\protobuf\FileOptions\OptimizeMode::SPEED;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL cc_generic_services = 16
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 16;
       $f->name = "cc_generic_services";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL java_generic_services = 17
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 17;
       $f->name = "java_generic_services";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL py_generic_services = 18
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 18;
       $f->name = "py_generic_services";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 999;
       $f->name = "uninterpreted_option";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -2906,7 +2906,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class MessageOptions extends \StudyDrSlump\Protobuf\Message {
+  class MessageOptions extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var boolean */
     public $message_set_wire_format = FALSE;
@@ -2922,32 +2922,32 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MessageOptions');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MessageOptions');
 
       // OPTIONAL BOOL message_set_wire_format = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "message_set_wire_format";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL no_standard_descriptor_accessor = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "no_standard_descriptor_accessor";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 999;
       $f->name = "uninterpreted_option";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3093,7 +3093,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\FieldOptions {
 
-  class CType extends \StudyDrSlump\Protobuf\Enum {
+  class CType extends \ObibaDrSlump\Protobuf\Enum {
     const STRING = 0;
     const CORD = 1;
     const STRING_PIECE = 2;
@@ -3101,7 +3101,7 @@ namespace google\protobuf\FieldOptions {
 }
 namespace google\protobuf {
 
-  class FieldOptions extends \StudyDrSlump\Protobuf\Message {
+  class FieldOptions extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int - \google\protobuf\FieldOptions\CType */
     public $ctype = \google\protobuf\FieldOptions\CType::STRING;
@@ -3123,49 +3123,49 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldOptions');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.FieldOptions');
 
       // OPTIONAL ENUM ctype = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "ctype";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_ENUM;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_ENUM;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\google\protobuf\FieldOptions\CType';
       $f->default = \google\protobuf\FieldOptions\CType::STRING;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL packed = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "packed";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL deprecated = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "deprecated";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->default = FALSE;
       $descriptor->addField($f);
 
       // OPTIONAL STRING experimental_map_key = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "experimental_map_key";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 999;
       $f->name = "uninterpreted_option";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3385,7 +3385,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumOptions extends \StudyDrSlump\Protobuf\Message {
+  class EnumOptions extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[] */
     public $uninterpreted_option = array();
@@ -3395,14 +3395,14 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumOptions');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 999;
       $f->name = "uninterpreted_option";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3474,7 +3474,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class EnumValueOptions extends \StudyDrSlump\Protobuf\Message {
+  class EnumValueOptions extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[] */
     public $uninterpreted_option = array();
@@ -3484,14 +3484,14 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueOptions');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.EnumValueOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 999;
       $f->name = "uninterpreted_option";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3563,7 +3563,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class ServiceOptions extends \StudyDrSlump\Protobuf\Message {
+  class ServiceOptions extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[] */
     public $uninterpreted_option = array();
@@ -3573,14 +3573,14 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceOptions');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.ServiceOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 999;
       $f->name = "uninterpreted_option";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3652,7 +3652,7 @@ namespace google\protobuf {
 
 namespace google\protobuf {
 
-  class MethodOptions extends \StudyDrSlump\Protobuf\Message {
+  class MethodOptions extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption[] */
     public $uninterpreted_option = array();
@@ -3662,14 +3662,14 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodOptions');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.MethodOptions');
 
       // REPEATED MESSAGE uninterpreted_option = 999
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 999;
       $f->name = "uninterpreted_option";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption';
       $descriptor->addField($f);
 
@@ -3741,7 +3741,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\UninterpretedOption {
 
-  class NamePart extends \StudyDrSlump\Protobuf\Message {
+  class NamePart extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name_part = NULL;
@@ -3754,22 +3754,22 @@ namespace google\protobuf\UninterpretedOption {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption.NamePart');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption.NamePart');
 
       // REQUIRED STRING name_part = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name_part";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED BOOL is_extension = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "is_extension";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -3857,7 +3857,7 @@ namespace google\protobuf\UninterpretedOption {
 
 namespace google\protobuf {
 
-  class UninterpretedOption extends \StudyDrSlump\Protobuf\Message {
+  class UninterpretedOption extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \google\protobuf\UninterpretedOption\NamePart[] */
     public $name = array();
@@ -3885,63 +3885,63 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.UninterpretedOption');
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\UninterpretedOption\NamePart';
       $descriptor->addField($f);
 
       // OPTIONAL STRING identifier_value = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "identifier_value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL UINT64 positive_int_value = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "positive_int_value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_UINT64;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_UINT64;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT64 negative_int_value = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "negative_int_value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT64;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT64;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL DOUBLE double_value = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "double_value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_DOUBLE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_DOUBLE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BYTES string_value = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "string_value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BYTES;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BYTES;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING aggregate_value = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "aggregate_value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -4234,7 +4234,7 @@ namespace google\protobuf {
 
 namespace google\protobuf\SourceCodeInfo {
 
-  class Location extends \StudyDrSlump\Protobuf\Message {
+  class Location extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int[] */
     public $path = array();
@@ -4247,22 +4247,22 @@ namespace google\protobuf\SourceCodeInfo {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo.Location');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo.Location');
 
       // REPEATED INT32 path = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "path";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED INT32 span = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "span";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -4390,7 +4390,7 @@ namespace google\protobuf\SourceCodeInfo {
 
 namespace google\protobuf {
 
-  class SourceCodeInfo extends \StudyDrSlump\Protobuf\Message {
+  class SourceCodeInfo extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \google\protobuf\SourceCodeInfo\Location[] */
     public $location = array();
@@ -4400,14 +4400,14 @@ namespace google\protobuf {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'google.protobuf.SourceCodeInfo');
 
       // REPEATED MESSAGE location = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "location";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\google\protobuf\SourceCodeInfo\Location';
       $descriptor->addField($f);
 
