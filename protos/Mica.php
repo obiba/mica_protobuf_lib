@@ -5,7 +5,7 @@
 
 namespace obiba\mica {
 
-  class SessionDto extends \StudyDrSlump\Protobuf\Message {
+  class SessionDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $username = NULL;
@@ -18,22 +18,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.SessionDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.SessionDto');
 
       // REQUIRED STRING username = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "username";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING role = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "role";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -121,7 +121,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class StudySummaryDto extends \StudyDrSlump\Protobuf\Message {
+  class StudySummaryDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -161,100 +161,100 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudySummaryDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudySummaryDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE timestamps = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "timestamps";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\TimestampsDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE acronym = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "acronym";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED STRING designs = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "designs";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE targetNumber = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "targetNumber";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\TargetNumberDto';
       $descriptor->addField($f);
 
       // REPEATED STRING countries = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "countries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE logo = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "logo";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\AttachmentDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE objectives = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "objectives";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED STRING dataSources = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "dataSources";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE populationSummaries = 11
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 11;
       $f->name = "populationSummaries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\PopulationSummaryDto';
       $descriptor->addField($f);
 
@@ -816,7 +816,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class PopulationSummaryDto extends \StudyDrSlump\Protobuf\Message {
+  class PopulationSummaryDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -832,31 +832,31 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.PopulationSummaryDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.PopulationSummaryDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE dataCollectionEventSummaries = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "dataCollectionEventSummaries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\DataCollectionEventSummaryDto';
       $descriptor->addField($f);
 
@@ -1022,7 +1022,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DataCollectionEventSummaryDto extends \StudyDrSlump\Protobuf\Message {
+  class DataCollectionEventSummaryDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -1035,22 +1035,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DataCollectionEventSummaryDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DataCollectionEventSummaryDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -1159,7 +1159,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class StudySummariesDto extends \StudyDrSlump\Protobuf\Message {
+  class StudySummariesDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $total = NULL;
@@ -1178,38 +1178,38 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudySummariesDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudySummariesDto');
 
       // REQUIRED INT32 total = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "total";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 from = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "from";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 limit = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "limit";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE studySummaries = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "studySummaries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\StudySummaryDto';
       $descriptor->addField($f);
 
@@ -1392,7 +1392,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class StudyStateDto extends \StudyDrSlump\Protobuf\Message {
+  class StudyStateDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $publishedTag = NULL;
@@ -1405,22 +1405,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyStateDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyStateDto');
 
       // OPTIONAL STRING publishedTag = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "publishedTag";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REQUIRED INT32 revisionsAhead = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "revisionsAhead";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -1508,7 +1508,7 @@ namespace obiba\mica {
 
 namespace obiba\mica\StudyDto {
 
-  class StudyMethodsDto extends \StudyDrSlump\Protobuf\Message {
+  class StudyMethodsDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string[] */
     public $designs = array();
@@ -1533,57 +1533,57 @@ namespace obiba\mica\StudyDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.StudyMethodsDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.StudyMethodsDto');
 
       // REPEATED STRING designs = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "designs";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherDesign = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "otherDesign";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE followUpInfo = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "followUpInfo";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED STRING recruitments = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "recruitments";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherRecruitment = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "otherRecruitment";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE info = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -1940,7 +1940,7 @@ namespace obiba\mica\StudyDto {
 
 namespace obiba\mica\StudyDto {
 
-  class NumberOfParticipantsDto extends \StudyDrSlump\Protobuf\Message {
+  class NumberOfParticipantsDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\TargetNumberDto */
     public $participant = NULL;
@@ -1956,32 +1956,32 @@ namespace obiba\mica\StudyDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.NumberOfParticipantsDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.NumberOfParticipantsDto');
 
       // OPTIONAL MESSAGE participant = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "participant";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\TargetNumberDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE sample = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "sample";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\TargetNumberDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE info = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -2127,7 +2127,7 @@ namespace obiba\mica\StudyDto {
 
 namespace obiba\mica\StudyDto\PopulationDto {
 
-  class RecruitmentDto extends \StudyDrSlump\Protobuf\Message {
+  class RecruitmentDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string[] */
     public $dataSources = array();
@@ -2155,65 +2155,65 @@ namespace obiba\mica\StudyDto\PopulationDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto.RecruitmentDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto.RecruitmentDto');
 
       // REPEATED STRING dataSources = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "dataSources";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED STRING generalPopulationSources = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "generalPopulationSources";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED STRING specificPopulationSources = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "specificPopulationSources";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherSpecificPopulationSource = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "otherSpecificPopulationSource";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE studies = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "studies";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDtos';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherSource = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "otherSource";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE info = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -2627,14 +2627,14 @@ namespace obiba\mica\StudyDto\PopulationDto {
 
 namespace obiba\mica\StudyDto\PopulationDto\SelectionCriteriaDto {
 
-  class Gender extends \StudyDrSlump\Protobuf\Enum {
+  class Gender extends \ObibaDrSlump\Protobuf\Enum {
     const men = 0;
     const women = 1;
   }
 }
 namespace obiba\mica\StudyDto\PopulationDto {
 
-  class SelectionCriteriaDto extends \StudyDrSlump\Protobuf\Message {
+  class SelectionCriteriaDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int - \obiba\mica\StudyDto\PopulationDto\SelectionCriteriaDto\Gender */
     public $gender = NULL;
@@ -2671,91 +2671,91 @@ namespace obiba\mica\StudyDto\PopulationDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto.SelectionCriteriaDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto.SelectionCriteriaDto');
 
       // OPTIONAL ENUM gender = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "gender";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_ENUM;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_ENUM;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\StudyDto\PopulationDto\SelectionCriteriaDto\Gender';
       $descriptor->addField($f);
 
       // OPTIONAL INT32 ageMin = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "ageMin";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 ageMax = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "ageMax";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED STRING countriesIso = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "countriesIso";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE territory = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "territory";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED STRING criteria = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "criteria";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE ethnicOrigin = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "ethnicOrigin";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDtos';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE healthStatus = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "healthStatus";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDtos';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherCriteria = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "otherCriteria";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE info = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -3280,7 +3280,7 @@ namespace obiba\mica\StudyDto\PopulationDto {
 
 namespace obiba\mica\StudyDto\PopulationDto {
 
-  class DataCollectionEventDto extends \StudyDrSlump\Protobuf\Message {
+  class DataCollectionEventDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -3332,132 +3332,132 @@ namespace obiba\mica\StudyDto\PopulationDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto.DataCollectionEventDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto.DataCollectionEventDto');
 
       // OPTIONAL STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE description = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "description";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REQUIRED INT32 startYear = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "startYear";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 startMonth = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "startMonth";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 endYear = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "endYear";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 endMonth = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "endMonth";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED STRING dataSources = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "dataSources";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED STRING administrativeDatabases = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "administrativeDatabases";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherDataSources = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "otherDataSources";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED STRING bioSamples = 11
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 11;
       $f->name = "bioSamples";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE tissueTypes = 12
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 12;
       $f->name = "tissueTypes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherBioSamples = 13
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 13;
       $f->name = "otherBioSamples";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attachments = 14
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 14;
       $f->name = "attachments";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttachmentDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attributes = 15
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 15;
       $f->name = "attributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttributeDto';
       $descriptor->addField($f);
 
@@ -4227,7 +4227,7 @@ namespace obiba\mica\StudyDto\PopulationDto {
 
 namespace obiba\mica\StudyDto {
 
-  class PopulationDto extends \StudyDrSlump\Protobuf\Message {
+  class PopulationDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -4261,85 +4261,85 @@ namespace obiba\mica\StudyDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto.PopulationDto');
 
       // OPTIONAL STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE description = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "description";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE recruitment = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "recruitment";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\StudyDto\PopulationDto\RecruitmentDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE selectionCriteria = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "selectionCriteria";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\StudyDto\PopulationDto\SelectionCriteriaDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE numberOfParticipants = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "numberOfParticipants";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\StudyDto\NumberOfParticipantsDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE info = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE dataCollectionEvents = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "dataCollectionEvents";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\StudyDto\PopulationDto\DataCollectionEventDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attributes = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "attributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttributeDto';
       $descriptor->addField($f);
 
@@ -4787,7 +4787,7 @@ namespace obiba\mica\StudyDto {
 
 namespace obiba\mica {
 
-  class StudyDto extends \StudyDrSlump\Protobuf\Message {
+  class StudyDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -4866,214 +4866,214 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDto');
 
       // OPTIONAL STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE timestamps = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "timestamps";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\TimestampsDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE acronym = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "acronym";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE logo = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "logo";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\AttachmentDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE investigators = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "investigators";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\ContactDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE contacts = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "contacts";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\ContactDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE objectives = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "objectives";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL STRING website = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "website";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE specificAuthorization = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "specificAuthorization";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\AuthorizationDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE maelstromAuthorization = 11
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 11;
       $f->name = "maelstromAuthorization";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\AuthorizationDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE methods = 12
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 12;
       $f->name = "methods";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\StudyDto\StudyMethodsDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE numberOfParticipants = 13
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 13;
       $f->name = "numberOfParticipants";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\StudyDto\NumberOfParticipantsDto';
       $descriptor->addField($f);
 
       // OPTIONAL INT32 startYear = 14
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 14;
       $f->name = "startYear";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 endYear = 15
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 15;
       $f->name = "endYear";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED STRING access = 16
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 16;
       $f->name = "access";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE otherAccess = 17
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 17;
       $f->name = "otherAccess";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL STRING markerPaper = 18
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 18;
       $f->name = "markerPaper";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING pubmedId = 19
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 19;
       $f->name = "pubmedId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attachments = 20
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 20;
       $f->name = "attachments";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttachmentDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE info = 21
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 21;
       $f->name = "info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE populations = 22
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 22;
       $f->name = "populations";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\StudyDto\PopulationDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attributes = 24
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 24;
       $f->name = "attributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttributeDto';
       $descriptor->addField($f);
 
       // OPTIONAL STRING opal = 25
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 25;
       $f->name = "opal";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -6195,7 +6195,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DocumentDigestDto extends \StudyDrSlump\Protobuf\Message {
+  class DocumentDigestDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -6208,22 +6208,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DocumentDigestDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DocumentDigestDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -6332,7 +6332,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class NetworkDigestDto extends \StudyDrSlump\Protobuf\Message {
+  class NetworkDigestDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string[] */
     public $ids = array();
@@ -6342,14 +6342,14 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.NetworkDigestDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.NetworkDigestDto');
 
       // REPEATED STRING ids = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "ids";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -6420,7 +6420,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class NetworkDto extends \StudyDrSlump\Protobuf\Message {
+  class NetworkDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -6469,128 +6469,128 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.NetworkDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.NetworkDto');
 
       // OPTIONAL STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE timestamps = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "timestamps";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\TimestampsDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE acronym = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "acronym";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE investigators = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "investigators";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\ContactDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE contacts = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "contacts";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\ContactDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE description = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "description";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL STRING website = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "website";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE maelstromAuthorization = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "maelstromAuthorization";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\AuthorizationDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attachments = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "attachments";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttachmentDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE info = 11
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 11;
       $f->name = "info";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED STRING studyIds = 12
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 12;
       $f->name = "studyIds";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE studySummaries = 13
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 13;
       $f->name = "studySummaries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\StudySummaryDto';
       $descriptor->addField($f);
 
       // REQUIRED BOOL published = 14
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 14;
       $f->name = "published";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -7302,7 +7302,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class NetworksDto extends \StudyDrSlump\Protobuf\Message {
+  class NetworksDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $total = NULL;
@@ -7321,38 +7321,38 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.NetworksDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.NetworksDto');
 
       // REQUIRED INT32 total = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "total";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 from = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "from";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 limit = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "limit";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE networks = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "networks";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\NetworkDto';
       $descriptor->addField($f);
 
@@ -7535,7 +7535,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class TimestampsDto extends \StudyDrSlump\Protobuf\Message {
+  class TimestampsDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $created = NULL;
@@ -7548,22 +7548,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TimestampsDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TimestampsDto');
 
       // OPTIONAL STRING created = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "created";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING lastUpdate = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "lastUpdate";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -7651,7 +7651,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class CountryDto extends \StudyDrSlump\Protobuf\Message {
+  class CountryDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $iso = NULL;
@@ -7664,22 +7664,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.CountryDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.CountryDto');
 
       // REQUIRED STRING iso = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "iso";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -7788,7 +7788,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class TargetNumberDto extends \StudyDrSlump\Protobuf\Message {
+  class TargetNumberDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var boolean */
     public $noLimit = NULL;
@@ -7801,22 +7801,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TargetNumberDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TargetNumberDto');
 
       // OPTIONAL BOOL noLimit = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "noLimit";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT32 number = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "number";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -7904,7 +7904,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class LocalizedStringDto extends \StudyDrSlump\Protobuf\Message {
+  class LocalizedStringDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $lang = NULL;
@@ -7917,22 +7917,22 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.LocalizedStringDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.LocalizedStringDto');
 
       // REQUIRED STRING lang = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "lang";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING value = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "value";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -8020,7 +8020,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class LocalizedStringDtos extends \StudyDrSlump\Protobuf\Message {
+  class LocalizedStringDtos extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\LocalizedStringDto[] */
     public $localizedStrings = array();
@@ -8030,14 +8030,14 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.LocalizedStringDtos');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.LocalizedStringDtos');
 
       // REPEATED MESSAGE localizedStrings = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "localizedStrings";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -8109,7 +8109,7 @@ namespace obiba\mica {
 
 namespace obiba\mica\ContactDto {
 
-  class InstitutionDto extends \StudyDrSlump\Protobuf\Message {
+  class InstitutionDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\LocalizedStringDto[] */
     public $name = array();
@@ -8125,32 +8125,32 @@ namespace obiba\mica\ContactDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.ContactDto.InstitutionDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.ContactDto.InstitutionDto');
 
       // REPEATED MESSAGE name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE department = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "department";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE address = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "address";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\AddressDto';
       $descriptor->addField($f);
 
@@ -8316,7 +8316,7 @@ namespace obiba\mica\ContactDto {
 
 namespace obiba\mica {
 
-  class ContactDto extends \StudyDrSlump\Protobuf\Message {
+  class ContactDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $title = NULL;
@@ -8344,62 +8344,62 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.ContactDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.ContactDto');
 
       // OPTIONAL STRING title = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "title";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING firstName = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "firstName";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REQUIRED STRING lastName = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "lastName";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING email = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "email";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING phone = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "phone";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL dataAccessCommitteeMember = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "dataAccessCommitteeMember";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE institution = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "institution";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\ContactDto\InstitutionDto';
       $descriptor->addField($f);
 
@@ -8673,7 +8673,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class AuthorizationDto extends \StudyDrSlump\Protobuf\Message {
+  class AuthorizationDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var boolean */
     public $authorized = NULL;
@@ -8689,30 +8689,30 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AuthorizationDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AuthorizationDto');
 
       // OPTIONAL BOOL authorized = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "authorized";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING authorizer = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "authorizer";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING date = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "date";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -8837,7 +8837,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class AddressDto extends \StudyDrSlump\Protobuf\Message {
+  class AddressDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\LocalizedStringDto[] */
     public $street = array();
@@ -8859,48 +8859,48 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AddressDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AddressDto');
 
       // REPEATED MESSAGE street = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "street";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE city = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "city";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL STRING zip = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "zip";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING state = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "state";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE country = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "country";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\CountryDto';
       $descriptor->addField($f);
 
@@ -9140,7 +9140,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class AttachmentDto extends \StudyDrSlump\Protobuf\Message {
+  class AttachmentDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -9171,71 +9171,71 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AttachmentDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AttachmentDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING fileName = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "fileName";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING type = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "type";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE description = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "description";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // OPTIONAL STRING lang = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "lang";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL INT64 size = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "size";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT64;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT64;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING md5 = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "md5";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL BOOL justUploaded = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "justUploaded";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -9565,7 +9565,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class TempFileDto extends \StudyDrSlump\Protobuf\Message {
+  class TempFileDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -9584,38 +9584,38 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TempFileDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TempFileDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL INT64 size = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "size";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT64;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT64;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING md5 = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "md5";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -9777,7 +9777,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class MicaConfigDto extends \StudyDrSlump\Protobuf\Message {
+  class MicaConfigDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -9799,46 +9799,46 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.MicaConfigDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.MicaConfigDto');
 
       // REQUIRED STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED STRING languages = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "languages";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REQUIRED STRING defaultCharSet = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "defaultCharSet";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING publicUrl = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "publicUrl";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REQUIRED STRING opal = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "opal";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       foreach (self::$__extensions as $cb) {
@@ -10057,7 +10057,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class AttributeDto extends \StudyDrSlump\Protobuf\Message {
+  class AttributeDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $namespace = NULL;
@@ -10073,30 +10073,30 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AttributeDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.AttributeDto');
 
       // OPTIONAL STRING namespace = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "namespace";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REQUIRED STRING name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE values = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "values";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -10242,7 +10242,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class TaxonomyEntityDto extends \StudyDrSlump\Protobuf\Message {
+  class TaxonomyEntityDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -10258,31 +10258,31 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TaxonomyEntityDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TaxonomyEntityDto');
 
       // REQUIRED STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE titles = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "titles";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE descriptions = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "descriptions";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -10448,7 +10448,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class TermAttributeDto extends \StudyDrSlump\Protobuf\Message {
+  class TermAttributeDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\TaxonomyEntityDto */
     public $vocabulary = NULL;
@@ -10461,23 +10461,23 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TermAttributeDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TermAttributeDto');
 
       // REQUIRED MESSAGE vocabulary = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "vocabulary";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->reference = '\obiba\mica\TaxonomyEntityDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE terms = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "terms";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\TaxonomyEntityDto';
       $descriptor->addField($f);
 
@@ -10586,7 +10586,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class TermAttributesDto extends \StudyDrSlump\Protobuf\Message {
+  class TermAttributesDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\TaxonomyEntityDto */
     public $taxonomy = NULL;
@@ -10599,23 +10599,23 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TermAttributesDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.TermAttributesDto');
 
       // REQUIRED MESSAGE taxonomy = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "taxonomy";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->reference = '\obiba\mica\TaxonomyEntityDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE vocabularyTerms = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "vocabularyTerms";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\TermAttributeDto';
       $descriptor->addField($f);
 
@@ -10724,7 +10724,7 @@ namespace obiba\mica {
 
 namespace obiba\mica\DatasetDto {
 
-  class StudyTableDto extends \StudyDrSlump\Protobuf\Message {
+  class StudyTableDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $studyId = NULL;
@@ -10752,62 +10752,62 @@ namespace obiba\mica\DatasetDto {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetDto.StudyTableDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetDto.StudyTableDto');
 
       // REQUIRED STRING studyId = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "studyId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING populationId = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "populationId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING dataCollectionEventId = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "dataCollectionEventId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING project = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "project";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING table = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "table";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING dceId = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "dceId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL MESSAGE studySummary = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "studySummary";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $f->reference = '\obiba\mica\StudySummaryDto';
       $descriptor->addField($f);
 
@@ -11081,7 +11081,7 @@ namespace obiba\mica\DatasetDto {
 
 namespace obiba\mica {
 
-  class DatasetDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -11109,65 +11109,65 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetDto');
 
       // OPTIONAL STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE name = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE acronym = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "acronym";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE description = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "description";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REQUIRED STRING entityType = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "entityType";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED BOOL published = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "published";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attributes = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "attributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttributeDto';
       $descriptor->addField($f);
 
@@ -11521,7 +11521,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class StudyDatasetDto extends \StudyDrSlump\Protobuf\Message {
+  class StudyDatasetDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\DatasetDto\StudyTableDto */
     public $studyTable = NULL;
@@ -11531,14 +11531,14 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDatasetDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.StudyDatasetDto');
 
       // REQUIRED MESSAGE studyTable = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "studyTable";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->reference = '\obiba\mica\DatasetDto\StudyTableDto';
       $descriptor->addField($f);
 
@@ -11590,7 +11590,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class HarmonizationDatasetDto extends \StudyDrSlump\Protobuf\Message {
+  class HarmonizationDatasetDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $project = NULL;
@@ -11606,30 +11606,30 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.HarmonizationDatasetDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.HarmonizationDatasetDto');
 
       // REQUIRED STRING project = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "project";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING table = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "table";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE studyTables = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "studyTables";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\DatasetDto\StudyTableDto';
       $descriptor->addField($f);
 
@@ -11775,7 +11775,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetsDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetsDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $total = NULL;
@@ -11794,38 +11794,38 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetsDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetsDto');
 
       // REQUIRED INT32 total = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "total";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 from = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "from";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 limit = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "limit";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE datasets = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "datasets";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\DatasetDto';
       $descriptor->addField($f);
 
@@ -12008,7 +12008,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetCategoryDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetCategoryDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $name = NULL;
@@ -12024,30 +12024,30 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetCategoryDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetCategoryDto');
 
       // REQUIRED STRING name = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED BOOL missing = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "missing";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attributes = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "attributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttributeDto';
       $descriptor->addField($f);
 
@@ -12193,7 +12193,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetVariableDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetVariableDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -12257,162 +12257,162 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING datasetId = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "datasetId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED STRING studyIds = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "studyIds";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $descriptor->addField($f);
 
       // REQUIRED STRING variableType = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "variableType";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING name = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING entityType = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "entityType";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING valueType = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "valueType";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING mimeType = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "mimeType";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REQUIRED BOOL repeatable = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "repeatable";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_BOOL;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_BOOL;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING occurrenceGroup = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "occurrenceGroup";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING unit = 11
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 11;
       $f->name = "unit";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // OPTIONAL STRING referencedEntityType = 12
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 12;
       $f->name = "referencedEntityType";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REQUIRED STRING nature = 13
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 13;
       $f->name = "nature";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 index = 14
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 14;
       $f->name = "index";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attributes = 15
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 15;
       $f->name = "attributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttributeDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE categories = 16
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 16;
       $f->name = "categories";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\DatasetCategoryDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE datasetName = 17
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 17;
       $f->name = "datasetName";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE studySummaries = 18
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 18;
       $f->name = "studySummaries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\StudySummaryDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE termAttributes = 19
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 19;
       $f->name = "termAttributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\TermAttributesDto';
       $descriptor->addField($f);
 
@@ -13250,7 +13250,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetVariablesDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetVariablesDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $total = NULL;
@@ -13269,38 +13269,38 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariablesDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariablesDto');
 
       // REQUIRED INT32 total = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "total";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 from = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "from";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 limit = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "limit";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE variables = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "variables";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\DatasetVariableDto';
       $descriptor->addField($f);
 
@@ -13483,7 +13483,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetVariableResolverDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetVariableResolverDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var string */
     public $id = NULL;
@@ -13520,90 +13520,90 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableResolverDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableResolverDto');
 
       // REQUIRED STRING id = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "id";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING datasetId = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "datasetId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING name = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "name";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED STRING variableType = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "variableType";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // OPTIONAL STRING studyId = 5
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 5;
       $f->name = "studyId";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_STRING;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_STRING;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE datasetName = 6
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 6;
       $f->name = "datasetName";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE datasetAcronym = 7
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 7;
       $f->name = "datasetAcronym";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE variableLabel = 8
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 8;
       $f->name = "variableLabel";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE studyName = 9
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 9;
       $f->name = "studyName";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE studyAcronym = 10
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 10;
       $f->name = "studyAcronym";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\LocalizedStringDto';
       $descriptor->addField($f);
 
@@ -14088,7 +14088,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetVariableSummaryDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetVariableSummaryDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\DatasetVariableResolverDto */
     public $resolver = NULL;
@@ -14101,23 +14101,23 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableSummaryDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableSummaryDto');
 
       // REQUIRED MESSAGE resolver = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "resolver";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->reference = '\obiba\mica\DatasetVariableResolverDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE attributes = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "attributes";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\AttributeDto';
       $descriptor->addField($f);
 
@@ -14226,7 +14226,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetVariableHarmonizationDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetVariableHarmonizationDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var \obiba\mica\DatasetVariableResolverDto */
     public $resolver = NULL;
@@ -14239,23 +14239,23 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableHarmonizationDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariableHarmonizationDto');
 
       // REQUIRED MESSAGE resolver = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "resolver";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $f->reference = '\obiba\mica\DatasetVariableResolverDto';
       $descriptor->addField($f);
 
       // REPEATED MESSAGE datasetVariableSummaries = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "datasetVariableSummaries";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\DatasetVariableSummaryDto';
       $descriptor->addField($f);
 
@@ -14364,7 +14364,7 @@ namespace obiba\mica {
 
 namespace obiba\mica {
 
-  class DatasetVariablesHarmonizationsDto extends \StudyDrSlump\Protobuf\Message {
+  class DatasetVariablesHarmonizationsDto extends \ObibaDrSlump\Protobuf\Message {
 
     /**  @var int */
     public $total = NULL;
@@ -14383,38 +14383,38 @@ namespace obiba\mica {
     protected static $__extensions = array();
 
     public static function descriptor() {
-      $descriptor = new \StudyDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariablesHarmonizationsDto');
+      $descriptor = new \ObibaDrSlump\Protobuf\Descriptor(__CLASS__, 'obiba.mica.DatasetVariablesHarmonizationsDto');
 
       // REQUIRED INT32 total = 1
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 1;
       $f->name = "total";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 from = 2
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 2;
       $f->name = "from";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REQUIRED INT32 limit = 3
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 3;
       $f->name = "limit";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_INT32;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REQUIRED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_INT32;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REQUIRED;
       $descriptor->addField($f);
 
       // REPEATED MESSAGE variableHarmonizations = 4
-      $f = new \StudyDrSlump\Protobuf\Field();
+      $f = new \ObibaDrSlump\Protobuf\Field();
       $f->number = 4;
       $f->name = "variableHarmonizations";
-      $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-      $f->rule = \StudyDrSlump\Protobuf::RULE_REPEATED;
+      $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+      $f->rule = \ObibaDrSlump\Protobuf::RULE_REPEATED;
       $f->reference = '\obiba\mica\DatasetVariableHarmonizationDto';
       $descriptor->addField($f);
 
@@ -14598,41 +14598,41 @@ namespace obiba\mica {
 namespace {
   \obiba\mica\StudySummaryDto::extension(function () {
     // OPTIONAL MESSAGE obiba.mica.StudyStateDto.state = 1000
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1000;
     $f->name = "obiba.mica.StudyStateDto.state";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\obiba\mica\StudyStateDto';
     return $f;
   });
   \obiba\mica\DocumentDigestDto::extension(function () {
     // OPTIONAL MESSAGE obiba.mica.NetworkDigestDto.studies = 1000
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1000;
     $f->name = "obiba.mica.NetworkDigestDto.studies";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\obiba\mica\NetworkDigestDto';
     return $f;
   });
   \obiba\mica\DatasetDto::extension(function () {
     // OPTIONAL MESSAGE obiba.mica.StudyDatasetDto.type = 1000
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1000;
     $f->name = "obiba.mica.StudyDatasetDto.type";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\obiba\mica\StudyDatasetDto';
     return $f;
   });
   \obiba\mica\DatasetDto::extension(function () {
     // OPTIONAL MESSAGE obiba.mica.HarmonizationDatasetDto.type = 1001
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number = 1001;
     $f->name = "obiba.mica.HarmonizationDatasetDto.type";
-    $f->type = \StudyDrSlump\Protobuf::TYPE_MESSAGE;
-    $f->rule = \StudyDrSlump\Protobuf::RULE_OPTIONAL;
+    $f->type = \ObibaDrSlump\Protobuf::TYPE_MESSAGE;
+    $f->rule = \ObibaDrSlump\Protobuf::RULE_OPTIONAL;
     $f->reference = '\obiba\mica\HarmonizationDatasetDto';
     return $f;
   });

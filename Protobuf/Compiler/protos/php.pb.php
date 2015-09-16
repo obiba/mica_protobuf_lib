@@ -7,7 +7,7 @@ namespace {
 
   \google\protobuf\FileOptions::extension(function(){
       // optional  php.namespace = 50002
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number    = 50002;
     $f->name      = "php.namespace";
     $f->type      = 9;
@@ -16,7 +16,7 @@ namespace {
   });
   \google\protobuf\FileOptions::extension(function(){
       // optional  php.suffix = 50003
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number    = 50003;
     $f->name      = "php.suffix";
     $f->type      = 9;
@@ -26,7 +26,7 @@ namespace {
   });
   \google\protobuf\FileOptions::extension(function(){
       // optional  php.multiple = 50004
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number    = 50004;
     $f->name      = "php.multifile";
     $f->type      = 8;
@@ -36,7 +36,7 @@ namespace {
   });
   \google\protobuf\FileOptions::extension(function(){
       // optional  php.generic_services = 50005
-    $f = new \StudyDrSlump\Protobuf\Field();
+    $f = new \ObibaDrSlump\Protobuf\Field();
     $f->number    = 50005;
     $f->name      = "php.generic_services";
     $f->type      = 8;

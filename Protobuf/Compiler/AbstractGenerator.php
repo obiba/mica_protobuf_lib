@@ -1,12 +1,12 @@
 <?php
 
-namespace StudyDrSlump\Protobuf\Compiler;
+namespace ObibaDrSlump\Protobuf\Compiler;
 
 use google\protobuf as proto;
 
 abstract class AbstractGenerator
 {
-    /** @var \StudyDrSlump\Protobuf\Compiler */
+    /** @var \ObibaDrSlump\Protobuf\Compiler */
     protected $compiler;
     /** @var \google\protobuf\FileDescriptorProto */
     protected $proto;
@@ -14,7 +14,7 @@ abstract class AbstractGenerator
     /** @var array */
     protected $extensions = array();
 
-    public function __construct(\StudyDrSlump\Protobuf\Compiler $compiler)
+    public function __construct(\ObibaDrSlump\Protobuf\Compiler $compiler)
     {
         $this->compiler = $compiler;
     }

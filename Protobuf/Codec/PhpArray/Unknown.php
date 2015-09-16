@@ -1,8 +1,8 @@
 <?php
 
-namespace StudyDrSlump\Protobuf\Codec\PhpArray;
+namespace ObibaDrSlump\Protobuf\Codec\PhpArray;
 
-class Unknown extends \StudyDrSlump\Protobuf\Unknown
+class Unknown extends \ObibaDrSlump\Protobuf\Unknown
 {
     public function __construct($tag, $type, $data)
     {

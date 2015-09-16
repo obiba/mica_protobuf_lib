@@ -1,8 +1,8 @@
 <?php
 
-namespace StudyDrSlump;
+namespace ObibaDrSlump;
 
-use StudyDrSlump\Protobuf;
+use ObibaDrSlump\Protobuf;
 
 class Protobuf
 {
@@ -113,7 +113,7 @@ class Protobuf
         if ($codec instanceof Protobuf\CodecInterface) {
             self::registerCodec('default', $codec);
         } else {
-            throw new Protobuf\Exception('Codec must implement StudyDrSlump\Protobuf\CodecInterface');
+            throw new Protobuf\Exception('Codec must implement ObibaDrSlump\Protobuf\CodecInterface');
         }
     }
 
@@ -137,7 +137,7 @@ class Protobuf
      * Encodes a message using the default codec
      *
      * @static
-     * @param \StudyDrSlump\Protobuf\Message $message
+     * @param \ObibaDrSlump\Protobuf\Message $message
      * @return string
      */
     static public function encode(Protobuf\Message $message)
@@ -150,7 +150,7 @@ class Protobuf
      * @static
      * @param String|Message $message
      * @param String $data
-     * @return \StudyDrSlump\Protobuf\Message
+     * @return \ObibaDrSlump\Protobuf\Message
      */
     static public function decode($message, $data)
     {

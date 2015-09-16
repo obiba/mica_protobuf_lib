@@ -5,14 +5,14 @@
 
 namespace google\protobuf\compiler {
 
-  class CodeGeneratorRequest extends \StudyDrSlump\Protobuf\Message {
+  class CodeGeneratorRequest extends \ObibaDrSlump\Protobuf\Message {
 
-    /** @var \StudyDrSlump\Protobuf\Descriptor */
+    /** @var \ObibaDrSlump\Protobuf\Descriptor */
     protected static $__descriptor;
     /** @var \Closure[] */
     protected static $__extensions = array();
 
-    public static function descriptor(\StudyDrSlump\Protobuf\Descriptor $descriptor = NULL)
+    public static function descriptor(\ObibaDrSlump\Protobuf\Descriptor $descriptor = NULL)
     {
       if (NULL !== $descriptor) {
         self::$__descriptor = $descriptor;
@@ -20,10 +20,10 @@ namespace google\protobuf\compiler {
       }
 
       if (!self::$__descriptor) {
-        $descriptor = new \StudyDrSlump\Protobuf\Descriptor("\google\protobuf\compiler\CodeGeneratorRequest");
+        $descriptor = new \ObibaDrSlump\Protobuf\Descriptor("\google\protobuf\compiler\CodeGeneratorRequest");
 
         // repeated  file_to_generate = 1
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 1;
         $f->name      = "file_to_generate";
         $f->type      = 9;
@@ -31,7 +31,7 @@ namespace google\protobuf\compiler {
         $descriptor->addField($f);
 
         // optional  parameter = 2
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 2;
         $f->name      = "parameter";
         $f->nameOrig  = "parameter";
@@ -40,7 +40,7 @@ namespace google\protobuf\compiler {
         $descriptor->addField($f);
 
         // repeated .google.protobuf.FileDescriptorProto proto_file = 15
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 15;
         $f->name      = "proto_file";
         $f->type      = 11;
@@ -224,14 +224,14 @@ namespace google\protobuf\compiler {
 
 namespace google\protobuf\compiler {
 
-  class CodeGeneratorResponse extends \StudyDrSlump\Protobuf\Message {
+  class CodeGeneratorResponse extends \ObibaDrSlump\Protobuf\Message {
 
-    /** @var \StudyDrSlump\Protobuf\Descriptor */
+    /** @var \ObibaDrSlump\Protobuf\Descriptor */
     protected static $__descriptor;
     /** @var \Closure[] */
     protected static $__extensions = array();
 
-    public static function descriptor(\StudyDrSlump\Protobuf\Descriptor $descriptor = NULL)
+    public static function descriptor(\ObibaDrSlump\Protobuf\Descriptor $descriptor = NULL)
     {
       if (NULL !== $descriptor) {
         self::$__descriptor = $descriptor;
@@ -239,10 +239,10 @@ namespace google\protobuf\compiler {
       }
 
       if (!self::$__descriptor) {
-        $descriptor = new \StudyDrSlump\Protobuf\Descriptor("\google\protobuf\compiler\CodeGeneratorResponse");
+        $descriptor = new \ObibaDrSlump\Protobuf\Descriptor("\google\protobuf\compiler\CodeGeneratorResponse");
 
         // optional  error = 1
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 1;
         $f->name      = "error";
         $f->nameOrig  = "error";
@@ -251,7 +251,7 @@ namespace google\protobuf\compiler {
         $descriptor->addField($f);
 
         // repeated .google.protobuf.compiler.CodeGeneratorResponse.File file = 15
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 15;
         $f->name      = "file";
         $f->nameOrig  = "file";
@@ -376,14 +376,14 @@ namespace google\protobuf\compiler {
 
 namespace google\protobuf\compiler\CodeGeneratorResponse {
 
-  class File extends \StudyDrSlump\Protobuf\Message {
+  class File extends \ObibaDrSlump\Protobuf\Message {
 
-    /** @var \StudyDrSlump\Protobuf\Descriptor */
+    /** @var \ObibaDrSlump\Protobuf\Descriptor */
     protected static $__descriptor;
     /** @var \Closure[] */
     protected static $__extensions = array();
 
-    public static function descriptor(\StudyDrSlump\Protobuf\Descriptor $descriptor = NULL)
+    public static function descriptor(\ObibaDrSlump\Protobuf\Descriptor $descriptor = NULL)
     {
       if (NULL !== $descriptor) {
         self::$__descriptor = $descriptor;
@@ -391,10 +391,10 @@ namespace google\protobuf\compiler\CodeGeneratorResponse {
       }
 
       if (!self::$__descriptor) {
-        $descriptor = new \StudyDrSlump\Protobuf\Descriptor("\google\protobuf\compiler\CodeGeneratorResponse\File");
+        $descriptor = new \ObibaDrSlump\Protobuf\Descriptor("\google\protobuf\compiler\CodeGeneratorResponse\File");
 
         // optional  name = 1
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 1;
         $f->name      = "name";
         $f->nameOrig  = "name";
@@ -403,7 +403,7 @@ namespace google\protobuf\compiler\CodeGeneratorResponse {
         $descriptor->addField($f);
 
         // optional  insertion_point = 2
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 2;
         $f->name      = "insertion_point";
         $f->type      = 9;
@@ -411,7 +411,7 @@ namespace google\protobuf\compiler\CodeGeneratorResponse {
         $descriptor->addField($f);
 
         // optional  content = 15
-        $f = new \StudyDrSlump\Protobuf\Field();
+        $f = new \ObibaDrSlump\Protobuf\Field();
         $f->number    = 15;
         $f->name      = "content";
         $f->nameOrig  = "content";

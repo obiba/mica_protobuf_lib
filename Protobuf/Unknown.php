@@ -1,6 +1,6 @@
 <?php
 
-namespace StudyDrSlump\Protobuf;
+namespace ObibaDrSlump\Protobuf;
 
 abstract class Unknown
 {
