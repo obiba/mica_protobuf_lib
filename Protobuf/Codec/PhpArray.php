@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf\Codec;
+namespace DrSlump\Protobuf\Codec;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 /**
  * This codec serializes and unserializes data from/to PHP associative
@@ -27,7 +27,7 @@ class PhpArray implements Protobuf\CodecInterface
     }
 
     /**
-     * @param \ObibaDrSlump\Protobuf\Message $message
+     * @param \DrSlump\Protobuf\Message $message
      * @return array
      */
     public function encode(Protobuf\Message $message)
@@ -36,9 +36,9 @@ class PhpArray implements Protobuf\CodecInterface
     }
 
     /**
-     * @param \ObibaDrSlump\Protobuf\Message $message
+     * @param \DrSlump\Protobuf\Message $message
      * @param array $data
-     * @return \ObibaDrSlump\Protobuf\Message
+     * @return \DrSlump\Protobuf\Message
      */
     public function decode(Protobuf\Message $message, $data)
     {

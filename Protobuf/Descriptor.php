@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 class Descriptor
 {
@@ -12,7 +12,7 @@ class Descriptor
     /** @var String Holds the original proto name */
     protected $name;
 
-    /** @var \ObibaDrSlump\Protobuf\Field[] */
+    /** @var \DrSlump\Protobuf\Field[] */
     protected $fields = array();
 
     /** @var array - Cache the relation between names and tags */
@@ -48,7 +48,7 @@ class Descriptor
     /**
      * Obtain the list of fields in the message
      *
-     * @return \ObibaDrSlump\Protobuf\Field[]
+     * @return \DrSlump\Protobuf\Field[]
      */
     public function getFields()
     {
@@ -58,7 +58,7 @@ class Descriptor
     /**
      * Adds a field to the message
      *
-     * @param \ObibaDrSlump\Protobuf\Field $field
+     * @param \DrSlump\Protobuf\Field $field
      * @param bool $isExtension
      */
     public function addField(Protobuf\Field $field, $isExtension = false)
@@ -71,7 +71,7 @@ class Descriptor
      * Obtain a field descriptor by its tag number
      *
      * @param int $tag
-     * @return \ObibaDrSlump\Protobuf\Field | NULL
+     * @return \DrSlump\Protobuf\Field | NULL
      */
     public function getField($tag)
     {
@@ -84,7 +84,7 @@ class Descriptor
      * Obtain a field descriptor by its name
      *
      * @param string $name
-     * @return \ObibaDrSlump\Protobuf\Field | NULL
+     * @return \DrSlump\Protobuf\Field | NULL
      */
     public function getFieldByName($name)
     {

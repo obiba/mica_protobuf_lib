@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf\Codec;
+namespace DrSlump\Protobuf\Codec;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 class Binary implements Protobuf\CodecInterface
 {
@@ -37,7 +37,7 @@ class Binary implements Protobuf\CodecInterface
     );
 
     /**
-     * @param \ObibaDrSlump\Protobuf\Message $message
+     * @param \DrSlump\Protobuf\Message $message
      * @return string
      */
     public function encode(Protobuf\Message $message)
@@ -48,7 +48,7 @@ class Binary implements Protobuf\CodecInterface
     /**
      * @param String|Message $message
      * @param String $data
-     * @return \ObibaDrSlump\Protobuf\Message
+     * @return \DrSlump\Protobuf\Message
      */
     public function decode(Protobuf\Message $message, $data)
     {
@@ -203,15 +203,15 @@ class Binary implements Protobuf\CodecInterface
     }
 
     /**
-     * @param \ObibaDrSlump\Protobuf\Codec\Binary\Reader $reader
-     * @param \ObibaDrSlump\Protobuf\Message             $message
+     * @param \DrSlump\Protobuf\Codec\Binary\Reader $reader
+     * @param \DrSlump\Protobuf\Message             $message
      * @param int                                   $length 
-     * @return \ObibaDrSlump\Protobuf\Message
+     * @return \DrSlump\Protobuf\Message
      */
-    protected function decodeMessage($reader, \ObibaDrSlump\Protobuf\Message $message, $length = NULL)
+    protected function decodeMessage($reader, \DrSlump\Protobuf\Message $message, $length = NULL)
     {
-        /** @var $message \ObibaDrSlump\Protobuf\Message */
-        /** @var $descriptor \ObibaDrSlump\Protobuf\Descriptor */
+        /** @var $message \DrSlump\Protobuf\Message */
+        /** @var $descriptor \DrSlump\Protobuf\Descriptor */
 
         // Get message descriptor
         $descriptor = Protobuf::getRegistry()->getDescriptor($message);

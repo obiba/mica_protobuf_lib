@@ -2,7 +2,9 @@
 
 require_once 'Protobuf.php';
 
-DrSlump\Protobuf::autoload();
+use DrSlump\Protobuf;
+
+Protobuf::autoload();
 
 require_once 'protos/Mica.php';
 require_once 'protos/MicaSearch.php';

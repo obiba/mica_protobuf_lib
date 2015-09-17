@@ -1,9 +1,9 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
 interface CodecInterface
 {
-    public function encode(\ObibaDrSlump\Protobuf\Message $message);
-    public function decode(\ObibaDrSlump\Protobuf\Message $message, $data);
+    public function encode(\DrSlump\Protobuf\Message $message);
+    public function decode(\DrSlump\Protobuf\Message $message, $data);
 }

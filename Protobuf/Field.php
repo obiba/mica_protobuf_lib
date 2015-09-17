@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 class Field
 {
