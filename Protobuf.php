@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump;
+namespace DrSlump;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 class Protobuf
 {

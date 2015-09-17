@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Protobuf.php';
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 Protobuf::autoload();
 
