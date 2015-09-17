@@ -2,7 +2,7 @@
 
 namespace DrSlump;
 
-use DrSlump\Protobuf;
+use DrSlump;
 
 class Protobuf
 {
@@ -53,7 +53,6 @@ class Protobuf
                 $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
                 // Prefix with this file's directory
                 $class = __DIR__ . DIRECTORY_SEPARATOR . $class;
-
                 include($class . '.php');
                 return true;
             }
@@ -113,7 +112,7 @@ class Protobuf
         if ($codec instanceof Protobuf\CodecInterface) {
             self::registerCodec('default', $codec);
         } else {
-            throw new Protobuf\Exception('Codec must implement ObibaDrSlump\Protobuf\CodecInterface');
+            throw new Protobuf\Exception('Codec must implement DrSlump\Protobuf\CodecInterface');
         }
     }
 
@@ -137,7 +136,7 @@ class Protobuf
      * Encodes a message using the default codec
      *
      * @static
-     * @param \ObibaDrSlump\Protobuf\Message $message
+     * @param \DrSlump\Protobuf\Message $message
      * @return string
      */
     static public function encode(Protobuf\Message $message)
@@ -150,7 +149,7 @@ class Protobuf
      * @static
      * @param String|Message $message
      * @param String $data
-     * @return \ObibaDrSlump\Protobuf\Message
+     * @return \DrSlump\Protobuf\Message
      */
     static public function decode($message, $data)
     {

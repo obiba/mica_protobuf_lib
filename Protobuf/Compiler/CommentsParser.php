@@ -1,6 +1,6 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf\Compiler;
+namespace DrSlump\Protobuf\Compiler;
 
 class CommentsParser
 {

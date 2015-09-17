@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf\Codec;
+namespace DrSlump\Protobuf\Codec;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 /**
  * This codec serializes to Protobuf's TextFormat, unserialization
@@ -12,7 +12,7 @@ use ObibaDrSlump\Protobuf;
 class TextFormat implements Protobuf\CodecInterface
 {
     /**
-     * @param \ObibaDrSlump\Protobuf\Message $message
+     * @param \DrSlump\Protobuf\Message $message
      * @return string
      */
     public function encode(Protobuf\Message $message)
@@ -22,10 +22,10 @@ class TextFormat implements Protobuf\CodecInterface
 
     /**
      *
-     * @throw \ObibaDrSlump\Protobuf\Exception - Decoding is not supported
-     * @param \ObibaDrSlump\Protobuf\Message $message
+     * @throw \DrSlump\Protobuf\Exception - Decoding is not supported
+     * @param \DrSlump\Protobuf\Message $message
      * @param String $data
-     * @return \ObibaDrSlump\Protobuf\Message
+     * @return \DrSlump\Protobuf\Message
      */
     public function decode(Protobuf\Message $message, $data)
     {

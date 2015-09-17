@@ -1,15 +1,15 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 abstract class Message implements \ArrayAccess
 {
     /** @var \Closure[] */
     static protected $__extensions = array();
 
-    /** @var \ObibaDrSlump\Protobuf\Descriptor */
+    /** @var \DrSlump\Protobuf\Descriptor */
     protected $_descriptor;
     /** @var array Store data for extension fields */
     protected $_extensions = array();
@@ -19,7 +19,7 @@ abstract class Message implements \ArrayAccess
     /**
      * @static
      * @abstract
-     * @return \ObibaDrSlump\Protobuf\Descriptor
+     * @return \DrSlump\Protobuf\Descriptor
      */
     public static function descriptor()
     {
@@ -186,7 +186,7 @@ abstract class Message implements \ArrayAccess
      * @param int $tag
      * @param mixed $value
      * @param int|null $idx
-     * @return \ObibaDrSlump\Protobuf\Message - Fluent interface
+     * @return \DrSlump\Protobuf\Message - Fluent interface
      */
     public function _set($tag, $value, $idx = null)
     {
@@ -247,7 +247,7 @@ abstract class Message implements \ArrayAccess
      *
      * @throws \Exception If trying to modify an unknown field
      * @param int $tag
-     * @return \ObibaDrSlump\Protobuf\Message - Fluent interface
+     * @return \DrSlump\Protobuf\Message - Fluent interface
      */
     public function _clear($tag)
     {
@@ -320,7 +320,7 @@ abstract class Message implements \ArrayAccess
      * @param string $extname
      * @param mixed $value
      * @param int|null $idx
-     * @return \ObibaDrSlump\Protobuf\Message - Fluent Interface
+     * @return \DrSlump\Protobuf\Message - Fluent Interface
      */
     public function setExtension($extname, $value, $idx = null)
     {
@@ -341,7 +341,7 @@ abstract class Message implements \ArrayAccess
      *
      * @param string $extname
      * @param mixed $value
-     * @return \ObibaDrSlump\Protobuf\Message - Fluent Interface
+     * @return \DrSlump\Protobuf\Message - Fluent Interface
      */
     public function addExtension($extname, $value)
     {

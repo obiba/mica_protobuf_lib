@@ -1,6 +1,6 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
 // Load descriptor messages
 require_once __DIR__ . '/Compiler/protos/descriptor.pb.php';
@@ -8,7 +8,7 @@ require_once __DIR__ . '/Compiler/protos/plugin.pb.php';
 require_once __DIR__ . '/Compiler/protos/php.pb.php';
 require_once __DIR__ . '/Compiler/protos/json.pb.php';
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 use google\protobuf as proto;
 
 class Compiler
@@ -17,7 +17,7 @@ class Compiler
     protected $verbose = false;
     /** @var array */
     protected $packages = array();
-    /** @var \ObibaDrSlump\Protobuf\Compiler\CommentsParser */
+    /** @var \DrSlump\Protobuf\Compiler\CommentsParser */
     protected $comments;
     /** @var bool */
     protected $skipImported = false;
@@ -154,7 +154,7 @@ class Compiler
             }
         }
 
-        /** @var $generator \ObibaDrSlump\Protobuf\Compiler\AbstractGenerator */
+        /** @var $generator \DrSlump\Protobuf\Compiler\AbstractGenerator */
         $generator = new $generator($this);
 
         // Setup response object

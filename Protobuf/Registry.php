@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 /**
  * Keeps instances of the different message descriptors used.
@@ -14,8 +14,8 @@ class Registry
     protected $descriptors = array();
 
     /**
-     * @param string|\ObibaDrSlump\Protobuf\Message $message
-     * @param \ObibaDrSlump\Protobuf\Descriptor $descriptor
+     * @param string|\DrSlump\Protobuf\Message $message
+     * @param \DrSlump\Protobuf\Descriptor $descriptor
      */
     public function setDescriptor($message, Descriptor $descriptor)
     {
@@ -29,8 +29,8 @@ class Registry
      * Obtains the descriptor for the given message class, obtaining
      * it if not yet loaded.
      *
-     * @param string|\ObibaDrSlump\Protobuf\Message $message
-     * @return \ObibaDrSlump\Protobuf\Descriptor
+     * @param string|\DrSlump\Protobuf\Message $message
+     * @return \DrSlump\Protobuf\Descriptor
      */
     public function getDescriptor($message)
     {
@@ -51,7 +51,7 @@ class Registry
     }
 
     /**
-     * @param string|\ObibaDrSlump\Protobuf\Message $message
+     * @param string|\DrSlump\Protobuf\Message $message
      * @return bool
      */
     public function hasDescriptor($message)
@@ -63,7 +63,7 @@ class Registry
     }
 
     /**
-     * @param string|\ObibaDrSlump\Protobuf\Message $message
+     * @param string|\DrSlump\Protobuf\Message $message
      */
     public function unsetDescriptor($message)
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf\Codec\Binary;
+namespace DrSlump\Protobuf\Codec\Binary;
 
-class Unknown extends \ObibaDrSlump\Protobuf\Unknown
+class Unknown extends \DrSlump\Protobuf\Unknown
 {
     public function __construct($tag, $type, $data)
     {

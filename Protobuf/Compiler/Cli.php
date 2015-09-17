@@ -1,10 +1,10 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf\Compiler;
+namespace DrSlump\Protobuf\Compiler;
 
 require_once 'Console/CommandLine.php';
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 class Cli
 {

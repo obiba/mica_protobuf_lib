@@ -1,6 +1,6 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
 class Exception extends \Exception
 {

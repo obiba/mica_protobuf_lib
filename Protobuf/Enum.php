@@ -1,8 +1,8 @@
 <?php
 
-namespace ObibaDrSlump\Protobuf;
+namespace DrSlump\Protobuf;
 
-use ObibaDrSlump\Protobuf;
+use DrSlump\Protobuf;
 
 
 abstract class Enum extends \IteratorIterator implements \ArrayAccess
@@ -13,7 +13,7 @@ abstract class Enum extends \IteratorIterator implements \ArrayAccess
 
     /**
      * @static
-     * @return \ObibaDrSlump\Protobuf\Enum
+     * @return \DrSlump\Protobuf\Enum
      */
     public static function getInstance()
     {
